@@ -19,13 +19,28 @@ console.log(globalConst);
 // console.log(blockVar);
 // console.log(blockLet);
 
-function show() {
-  var functionVar = "I'm a block-scoped var";
-  let functionLet = "I'm a block-scoped let";
-  const functionConst = "I'm a block-scoped const";
-}
-show();
+// function show() {
+//   var functionVar = "I'm a block-scoped var";
+//   let functionLet = "I'm a block-scoped let";
+//   const functionConst = "I'm a block-scoped const";
+// }
+// show();
 
-console.log(functionVar);
-console.log(functionLet);
-console.log(functionConst);
+// console.log(functionVar);
+// console.log(functionLet);
+// console.log(functionConst);
+
+// Block Scope
+{
+  let year = 2024;
+  const name = "Dean";
+  var age = 35;
+
+  console.log(year);
+  console.log(name);
+  console.log(age);
+}
+
+console.log(year);
+console.log(name);
+console.log(age);
