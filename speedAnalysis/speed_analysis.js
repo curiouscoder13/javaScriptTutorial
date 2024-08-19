@@ -5,6 +5,9 @@ function startTest() {
   // Set the test text
   document.getElementById("inputText").value = testText;
 
+  // Clear the userInput field (Not in module but added for ease of starting the application)
+  document.getElementById("userInput").value = "";
+
   // Reset the results and timer
   document.getElementById("output").innerHTML = "";
   startTime = new Date().getTime();
@@ -40,6 +43,9 @@ function endTest() {
   var outputDiv = document.getElementById("output");
   outputDiv.innerHTML =
     "<h2>Typing Test Results:</h2>" +
+    "<p>Total Length: " +
+    userTypedText.length +
+    "</p>" +
     "<p>Words Typed: " +
     typedWords +
     "</p>" +
