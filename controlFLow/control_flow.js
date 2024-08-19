@@ -1,3 +1,4 @@
+// Conditional Operator
 let userRole = "admin";
 let accessLevel;
 
@@ -45,3 +46,11 @@ switch (userType) {
 }
 
 console.log("User Category: ", userCategory); // Outputs: Administrator, Manager, Subscriber, or Unknown
+
+// Ternary Operator
+let isAuthenticated = true;
+let AuthenticationStatus = isAuthenticated
+  ? "Authenticated"
+  : "Not Authenticated";
+
+console.log("Authentication Status: ", AuthenticationStatus); // Outputs: Authenticated
