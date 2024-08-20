@@ -42,3 +42,16 @@ function clearCompleteTasks() {
 
 addTaskBtn.addEventListener("click", addTask);
 clearCompleteBtn.addEventListener("click", clearCompleteTasks);
+
+// CLEAR ALL TASKS AUTOMATION
+// Added Clear all task button
+const clearAllTasksBtn = document.getElementById("clearAllTasksBtn");
+
+// Added Clear All Tasks function
+function clearAllTasks() {
+  tasks = [];
+  displayTask();
+}
+
+// Added event listener to Clear All Tasks button
+clearAllTasksBtn.addEventListener("click", clearAllTasks);
